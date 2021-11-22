@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0E1215"
+    android:backgroundTint="#0E1215"
+    android:padding="16dp"
+    tools:context="com.example.stopwatch.MainActivity">
+    <TextView
+        android:id="@+id/time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/white"
+        android:background="@drawable/border"
+
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textSize="70dp" />
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:backgroundTint="#E90D63"
+        android:layout_marginTop="50dp"
+        android:onClick="onClickStart"
+        android:textSize="30sp"
+        android:drawableLeft="@drawable/ic_baseline_play_arrow_24"
+        android:text="@string/start"
+        tools:ignore="OnClick" />
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:backgroundTint="#11EAE5"
+        android:layout_marginTop="50dp"
+        android:textSize="30sp"
+        android:drawableRight="@drawable/ic_baseline_pause_24"
+        android:onClick="onClickStop"
+        android:text="@string/stop"
+        tools:ignore="OnClick" />
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        android:backgroundTint="#1116EA"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:drawableLeft="@drawable/ic_baseline_replay_24"
+        android:onClick="onClickReset"
+        android:text="@string/reset"
+        tools:ignore="OnClick" />
+</LinearLayout>
